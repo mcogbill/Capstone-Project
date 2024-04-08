@@ -1,4 +1,4 @@
-Capstone Project Proposal:
+# Capstone Project Proposal
 
 1. What tech stack will you use for your final project? We recommend that you use React and Node for this project, however if you are extremely interested in becoming a Python developer you are welcome to use Python/Flask for this project.
 React and Node will be used to develop a real-time strategy (RTS) game with peer-to-peer multiplayer.

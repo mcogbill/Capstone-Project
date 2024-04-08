@@ -59,9 +59,11 @@
 
 Columns (data scheme) relational database diagram. Game status, team1 and 2, score. Create search date/time and team name (ex. redFlag1). **SQL alchemy or Express. Add a table.
 
-Column1 - Player ID
-Column2 - Player Username
-Column3 - Player team (1 or 2)
-Column4 - Match date time group
-Column5 - Match results (victory for team 1 or 2)
-Column6 - Match details (victory condition, unit stats, match duration, etc.)
+### Columns
+
+1. Player ID
+2. Player Username
+3. Player team (1 or 2)
+4. Match date time group
+5. Match results (victory for team 1 or 2)
+6. Match details (victory condition, unit stats, match duration, etc.)

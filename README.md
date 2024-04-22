@@ -52,8 +52,8 @@ Hoplite Tactics Online is a two player real-time strategy game. Click 'Play Onli
 
 ## User flow
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Capstone_Flow_Diagram](https://github.com/mcogbill/Capstone-Project/assets/9150602/1f25e882-a769-4453-9037-d018970d514e)
 
 ## Database
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Capstone_Database_Schema](https://github.com/mcogbill/Capstone-Project/assets/9150602/0d86bf78-604c-45d8-b421-6b5e3f07e91f)

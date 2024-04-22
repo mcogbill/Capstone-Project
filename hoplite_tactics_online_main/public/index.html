@@ -26,7 +26,7 @@
         <div class="screen chat-screen">
             <div class="header">
                 <button id="how-to-play">How to Play</button>
-                <button id="play-local">Play vs. Bot</button>
+                <button id="play-local">Play Hoplite Challenge</button>
                 <!-- <button id="play-online">Play Online</button>
                 <button id="rankings">Rankings</button> -->
                 <button id="exit-chat">Exit</button>
@@ -41,99 +41,61 @@
         </div>
         <div class="screen how-to-play-screen">
             <div class="header">
-                <button id="return-to-home">Exit</button>
+                <button id="dev-log">Dev Log</button>
+                <button id="return-to-home">Home</button>
             </div>
             <div class="text">
                 <h2>Getting Started</h2>
                 <ul></ul>
-                <h3>Hoplite Tactics Online is a two player real-time strategy game. Click 'Play Online' to view availabe
-                    players. Select a player to invite to a game session. The game session will begin once game invite
-                    has
-                    been accepted by other player. The global chat loby may also be used to find players and coordinate
-                    game
-                    sessions. Game session results can be viewed by clicking on the 'Rankings' tab.</h3>
+                <h3>Hoplite Tactics Online is a two player real-time strategy game. Click 'Play Hoplite Challenge' to
+                    start a game against AI opponents, and compete with other players for a top position on the
+                    leaderboard. Online PvP will be added at a later date. Future updates and development plans will be
+                    posted to the 'Dev Log' page.
+                </h3>
                 <br>
                 <h2>Controls</h2>
                 <ul></ul>
-                <h3>
-                    <li>Movement - Arrow keys move selected unit up, down, left, or right.</li>
-                    <li>Select Unit - 'z' key toggle selection between three hoplite units. Only selected unit is
-                        controlled.</li>
-                    <li>Idle - 'z' key activate stance. All units begin game in Idle stance.</li>
-                    <li>Phalanx - 'g' key activate stance.</li>
-                    <li>Turtle - 't' key activate stance.</li>
-                    <li>Strike - 'r' key (quick attack) from any stance.</li>
-                    <li>Fight - 'f' key activate from Phalanx stance only.</li>
-                    <li>Push - Arrow keys while Phalanx stance is active, and colliding with enemy hoplite unit.
-                    </li>
+                <img src="./img/keyboard.png" alt="keyboard controls">
+                <h2>Gameplay</h2>
+                <ul></ul>
+                <h3>Strategy:
+                    <br><br>
+                    Game mechanics allow for a variety of approaches to gameplay. Including: Defensive,
+                    Offensive, and Balanced strategies. Core gameplay involves hoplite unit close combat. Players will
+                    need to manage health, stamina, and attack timing to succeed in combat. Archers are used to control
+                    the battle space. Players can control Archers targeting by capturing Archers position.
                 </h3>
                 <br>
-                <h2>Game Mechanics</h2>
-                <ul></ul>
+                <h3>Obstacles:
+                    <br><br>
+                    <li>Map Boundaries: Units will not be able to move beyond the Top, bottom, left, and right borders
+                        of
+                        the map.</li>
+                    <li>Terrain: Rock formations create choke points, and protection from flanking enemies.</li>
+                    <li>Archers: Archers are positioned at the top of the map and are hostile to all units. Archer
+                        position may be captured by a single hoplite unit, providing freedom of movement for all
+                        friendly
+                        units. In 'Player vs. AI' matches, Archers will only attack enemy AI if player is occupying
+                        Archer
+                        capture point. Hoplite units may enter a 'Turtle' stance to prevent damage from Archer attacks.
+                        However, 'Turtle' stance reduces hoplite movement speed and offensive abilities.</li>
+                </h3>
+                <br>
+                <h3>Victory Conditions:</h3>
+                <br>
                 <h3>
-                    <li>Each player will start the game with three hoplite units to command</li>
-                    <li>Each hoplite unit has individual Status Bars, Stances, Abilities, and Controls
-                    <li><strong>Status Bars:</strong>
-                    <li>Health - Green represents remaining health. Red fills bar as unit receives damage.
-                        Unit dies when bar is 100% red.</li>
-                    <li>Stamina (Endurance) - Blue represents remaining endurance stamina. Used for unit
-                        'Movement', 'Fight', and 'Push' Abilities. Stamina recovers over time. Recovery rate
-                        depends on stance and current actions.</li>
-                    <li>Stamina (Explosive) - Purple represents remaining explosive stamina. Used for
-                        'Strike' attack. Stamina recovers over time. Recovery rate depends on stance and
-                        current actions.</li>
-                    </li>
-                    <li><strong>Stances:</strong>
-
-                    <li>Idle - Each unit will begin the game in this stance. Increased movement speed to
-                        change position quickly. Increased stamina recovery speed. Most vulnerable to all
-                        attacks.</li>
-                    <li>Phalanx - Toggle into defensive stance against hoplite units. Reduced movement
-                        speed. Least vulnerable to hoplite attacks. Vulnerable to archer attacks. Requires
-                        Stamina (Endurance) ≥ 1% to remain active. If Stamina is below 1%, unit will return
-                        to Idle stance.</li>
-                    <li>Turtle - Toggle into defensive stance against archer units. Reduced movement speed.
-                        Vulnerable to hoplite attacks. Least vulnerable to archer attacks.</li>
-                    </li>
-                    <li><strong>Abilities:</strong>
-
-                    <li>Strike - Quick attack. Deals most damage. Takes 50% Stamina (Endurance), and 100%
-                        Stamina (Explosive)</li>
-                    <li>Fight - Toggle attack mode. Deals minimal damage, and takes minimal Stamina
-                        (Endurance) while active. Requires Stamina (Endurance) ≥ 10% to remain active.</li>
-                    <li>Push - Forcefully move enemy hoplite unit. Activated while in Phalanx stance, moving
-                        forward, and colliding with enemy hoplite unit. Takes maximum Stamina (Endurance)
-                        while active.</li>
-                    </li>
-                    <li>Victory Conditions
-                    <li>Capture enemy flag
-                    <li>Whichever player occupies their capture point first will win the match.</li>
-                    <li>Both players will have capture points on the opposite side of the map.</li>
-                    <li>A hoplite unit occupies their capture point by remaining on the capture point
-                        position for 15 seconds.</li>
-                    </li>
-                    <li>Eliminate all enemy units
-                    <li>Whichever player reduces all enemy unit health bars to 0% will win the match.</li>
-                    </li>
-                    </li>
-                    <li>Obstacles
-                    <li>Map edges: Player's units will not be able to move beyond the Top, bottom, left, and right
-                        borders of the map.</li>
-                    <li>Rocks: Two rock formations in the middle of the map to create choke points and protection
-                        from Archer attacks.</li>
-                    <li>Archers: Archers are positioned at the top of the map preventing freedom of movement for
-                        hoplite units looking to rush across the map to capture points. Strategy is required to
-                        outmaneuver archers while maintaining hoplite offense and defense against opposing player.
-                        Archer position may be captured by a single hoplite unit, providing freedom of movement for
-                        other units. Archer attack range is limited to the top half of the map, allowing for hoplite
-                        units to move through narrow paths created by rock formations at the bottom of the map.</li>
-                    </li>
+                    1. Domination - Eliminate all enemy units.
+                    <br>
+                    2. Capture the Flag - Each player has a capture point on the oposite side of the map. Whichever
+                    player occupies their capture point first will win the match. Occupy capture point after hoplite
+                    unit holds capture point position for 15 seconds.
                 </h3>
             </div>
         </div>
         <div class="screen game-local-screen">
             <div class="header">
-                <button id="return-to-home">Exit</button>
+                <button id="leaderboard">Leaderboard</button>
+                <button id="return-to-home">Home</button>
             </div>
             <div class="stat-bars">
                 <div class="player-stat-bars">

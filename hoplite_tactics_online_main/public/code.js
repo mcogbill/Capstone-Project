@@ -321,7 +321,7 @@
                 this.capturePoint3.position.x = this.position.x + this.capturePoint3.offset.x;
                 this.capturePoint3.position.y = this.position.y + this.capturePoint3.offset.y;
 
-                // // Show Capture Points
+                // // Display Capture Points
                 // c.fillStyle = 'blue'
                 // c.fillRect(
                 //     this.capturePoint1.position.x,
@@ -729,8 +729,6 @@
                 };
             };
 
-
-
             switchSprite(sprite) {
                 if (this.image === this.sprites.death.image) {
                     if (this.framesCurrent === this.sprites.death.framesMax - 1)
@@ -977,8 +975,6 @@
             );
         };
 
-
-
         function victoryConditions({ player, enemy }) {
             document.querySelector('#displayText').style.display = 'Flex';
             if ((player.health + playerPawn1.health + playerPawn2.health) > (enemy.health + enemyPawn1.health + enemyPawn2.health) || enemyFlag.position.y >= 455) {
@@ -989,8 +985,6 @@
                 document.querySelector('#displayText').innerHTML = 'Tie';
             };
         };
-
-
 
         function startCountdown(durationInMinutes) {
             let timer = durationInMinutes * 60;
@@ -1015,8 +1009,6 @@
                 };
             }, 1000);
         };
-
-
 
         // Update Health Bars
         const healthBarInnerPlayer = document.getElementById('healthBarInnerPlayer');
@@ -1048,8 +1040,6 @@
             healthBarInnerEnemyPawn2.style.width = enemyPawn2.health + '%';
             healthTextEnemyPawn2.textContent = Math.floor(enemyPawn2.health) + '%';
         };
-
-
 
         // Update Stamina Bars
         const staminaBarInnerPlayer = document.getElementById('staminaBarInnerPlayer');
@@ -3057,8 +3047,6 @@
                 };
             };
 
-
-
             // *** PlayerPawn1 CONTROLS ***
             if (!playerPawn1.dead) {
                 // PlayerPawn1 Phalanx ON/OFF
@@ -3372,7 +3360,6 @@
                     playerPawn1.regenStrikeMed();
                 };
             };
-
 
             // *** PlayerPawn2 CONTROLS ***
             if (!playerPawn2.dead) {
@@ -3688,9 +3675,6 @@
                 };
             };
 
-
-
-            // AI Opponent
             if (playerFlag.position.y <= 455 && enemyFlag.position.y <= 455) {
 
                 // AI Enemy
@@ -4157,7 +4141,7 @@
         });
 
         window.addEventListener('keyup', (event) => {
-            // player keys
+            // Player Keys
             switch (event.key) {
                 case 'e':
                     keys.e.pressed = false;
@@ -4174,9 +4158,6 @@
                 case 'd':
                     keys.d.pressed = false;
                     break;
-                // case 'c':
-                //   keys.c.pressed = false
-                //   break
                 case 'v':
                     keys.v.pressed = false;
                     break;

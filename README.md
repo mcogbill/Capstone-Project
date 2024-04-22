@@ -1,72 +1,59 @@
 # Capstone-Project
 
+Hoplite Tactics Online is a two player real-time strategy game. Click 'Play Online' to view available players. Select a player to invite to a game session. The game session will begin once game invite has been accepted by other player. The global chat lobby may also be used to find players and coordinate game sessions. Game session results can be viewed by clicking on the 'Rankings' tab.
+
 ## How the game works
 
-- Two player Real Time Strategy game
-- Each player will start the game with three hoplite units to command
-- Each hoplite unit has individual Status Bars, Stances, Abilities, and Controls
+- Players will start a game with three hoplite units to command.
+- Hoplite units have individual Status Bars, Stances, Abilities, and Controls.
   - Status Bars
-        1. Health - Green represents remaining health. Red fills bar as unit receives damage. Unit dies when bar is 100% red.
-        2. Stamina (Endurance) - Blue represents remaining endurance stamina. Used for unit 'Movement', 'Fight', and 'Push' Abilities. Stamina recovers over time. Recovery rate depends on stance and current actions.
-        3. Stamina (Explosive) - Purple represents remaining explosive stamina. Used for 'Strike' attack. Stamina recovers over time. Recovery rate depends on stance and current actions.
+        - Health - Green represents remaining health. Red fills bar as unit receives damage. Unit dies when bar is 100% red.
+        - Stamina (Endurance) - Blue represents remaining endurance stamina. Used for unit 'Movement', 'Fight', and 'Push' Abilities. Stamina recovers over time. Recovery rate depends on stance and current actions.
+        - Stamina (Explosive) - Purple represents remaining explosive stamina. Used for 'Strike' attack. Stamina recovers over time. Recovery rate depends on stance and current actions.
   - Stances
-        1. Idle - Each unit will begin the game in this stance. Increased movement speed to change position quickly. Increased stamina recovery speed. Most vulnerable to all attacks.
-        2. Phalanx - Toggle into defensive stance against hoplite units. Reduced movemnt speed. Least vulnerable to hoplite attacks. Vulnerable to archer attacks. Requires Stamina (Endurance) >= 1% to remain active. If Stamina is below 1%, unit will return to Idle stance.
-        3. Turtle - Toggle into defensive stance against archer units. Reduced movment speed. Vulnerable to hoplite attacks. Least vulnerable to archer attacks.
+        - Idle - Each unit will begin the game in this stance. Increased movement speed to change position quickly. Increased stamina recovery speed. Most vulnerable to all attacks.
+        - Phalanx - Toggle into defensive stance against hoplite units. Reduced movemnt speed. Least vulnerable to hoplite attacks. Vulnerable to archer attacks. Requires Stamina (Endurance) >= 1% to remain active. If Stamina is below 1%, unit will return to Idle stance.
+        - Turtle - Toggle into defensive stance against archer units. Reduced movment speed. Vulnerable to hoplite attacks. Least vulnerable to archer attacks.
   - Abilities
-        1. Strike - Quick attack. Deals most damage. Takes 50% Stamina (Endurance), and 100% Stamina (Explosive)
-        2. Fight - Toggle attack mode. Deals minimal damgage, and takes minimal Stamina (Endurance) while active. Requires Stamina (Endurance) >= 10% to remain active.
-        3. Push - Forcefully move enemy hoplite unit. Activated while in Phalanx stance, moving forward, and colliding with enemy hoplite unit.Takes maximum Stamina (Endurance) while active.
-  - Controls
-        1. Select Unit - 'z' key to toggle selection between three hoplite units. Only selected unit is controlled.
-        2. Movement - Arrow keys to move selected unit up, down, left, or right.
-        3. Idle - 'z' key to activate stance. All units begin game in Idle stance.
-        4. Phalanx - 'g' key to activate stance.
-        5. Turtle - 't' key to activate stance.
-        3. Strike - 'r' key (quick attack) from any stance.
-        4. Fight - 'f' key to activate from Phalanx stance only.
-        5. Push - Arrow keys while Phalanx stance is active, and colliding with enemy hoplite unit.
-- Victory Conditions
-    1. Capture enemy flag
+        - Strike - Quick attack. Deals most damage. Takes 50% Stamina (Endurance), and 100% Stamina (Explosive)
+        - Fight - Toggle attack mode. Deals minimal damgage, and takes minimal Stamina (Endurance) while active. Requires Stamina (Endurance) >= 10% to remain active.
+        - Push - Forcefully move enemy hoplite unit. Activated while in Phalanx stance, moving forward, and colliding with enemy hoplite unit.Takes maximum Stamina (Endurance) while active.
+        
+## Controls (Keyboard)
+
+  - Unit Selection - 'x'
+  - Movement:
+  	- Up - 'w'
+  	- Down - 's'
+  	- Left - 'a'
+  	- Right - 'd'
+  - Stance:
+  	- Idle - 'z'
+  	- Phalanx - 'r'
+  	- Turtle - 't'
+  - Attack:
+  	- Strike - 'f' 
+  	- Fight - 'c' (Only in phalanx stance)
+        
+## Gameplay
+
+- Victory Conditions:
+	1. Domination
+        - Eliminate all enemy units.
+    2. Capture the Flag
+        - Each player has a capture point on the oposite side of the map.
         - Whichever player occupies their capture point first will win the match.
-        - Both players will have capture points on the oposite side of the map.
-        - A hoplite unit occupies thier capture point by remaining on the capture point position for 15 seconds.
-    2. Eliminate all enemy units
-        - Whichever player reduces all enemy unit health bars to 0% will win the match.
-- Obstacles
-    1. Map edges: Player's units will not be able to move beyond the Top, bottom, left, and right borders of the map.
-    2. Rocks: Two rock formations in the middle of the map to create choke points and protection from Archer attacks.
-    3. Archers: Archers are positioned at top of map preventing freedom of movement for hoplite units looking to rush accross the map to capture points. Strategy is required to out maneuver archers while maintinaing hoplite offense and defense against oppoising player. Archer position may be captured by a single hoplite unit, providing freedom of movemnt for other units. Archer attack range is limited to top half of the map, allowing for hoplite units to move through narrow paths created by rock formations at the bottom of the map.
+        - Occupy capture point after hoplite unit holds capture point position for 15 seconds.
+- Strategy: Game mechanics allow for a variety of approaches to gameplay. Including: Defensive, Offensive, and Balanced strategies. Core gameplay involves hoplite unit close combat. Players will need to manage health, stamina, and attack timing to succeed in combat. Archers are used to control the battle space. Players can control Archers targeting by capturing Archers position.
+- Obstacles:
+    - Map Boundaries: Units will not be able to move beyond the Top, bottom, left, and right borders of the map.
+    - Terrain: Rock formations create choke points, and protection from flanking enemies.
+    - Archers: Archers are positioned at the top of the map and are hostile to all units. Archer position may be captured by a single hoplite unit, providing freedom of movement for all friendly units. In 'Player vs. AI' matches, Archers will only attack enemy AI if player is occupying Archer capture point. Hoplite units may enter a 'Turtle' stance to prevent damage from Archer attacks. However, 'Turtle' stance reduces hoplite movement speed and offensive abilities.
 
 ## User flow
 
-1. Install app
-2. Open app in browser to homepage
-3. From homepage, select local play, online play, or ranking
-4. If select local play
-    - Two players use same keyboard
-    - Return to homepage following player victory
-5. If select online play
-    - Player will select username
-    - Player matchmaking
-    - Match start when matchmaking complete
-    - When match is complete, rankings will update with match results
-    - Player can select rematch, view rankings, or return to homepage
-6. If select rankings
-    - Player views match stats associated with username
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-## Database (User Rankings)
+## Database
 
-Columns (data scheme) relational database diagram. Game status, team1 and 2, score. Create search date/time and team name (ex. redFlag1). **SQL alchemy or Express. Add a table.
-
-### Columns
-
-1. Player ID
-2. Player Username
-3. Player team (1 or 2)
-4. Match date time group
-5. Match results (victory for team 1 or 2)
-6. Match details (victory condition, unit stats, match duration, etc.)
-
--database sql schema
--user flow diagram: https://app.diagrams.net/
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)

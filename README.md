@@ -67,3 +67,6 @@ Columns (data scheme) relational database diagram. Game status, team1 and 2, sco
 4. Match date time group
 5. Match results (victory for team 1 or 2)
 6. Match details (victory condition, unit stats, match duration, etc.)
+
+-database sql schema
+-user flow diagram: https://app.diagrams.net/

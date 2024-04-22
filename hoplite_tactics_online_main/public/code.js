@@ -5,7 +5,7 @@
 
     let uname;
 
-    // Join Chatroom
+    // Create Username
     app.querySelector(".join-screen #join-user").addEventListener("click", function () {
         let username = app.querySelector(".join-screen #username").value;
         if (username.length == 0) {
@@ -85,11 +85,10 @@
             el.innerText = message;
             messageContainer.appendChild(el);
         }
-        // Scroll Chat
         messageContainer.scrollTop = messageContainer.scrollHeight - messageContainer.clientHeight;
     };
 
-    // Play vs. Bot
+    // Play Hoplite Challenge
     app.querySelector(".chat-screen #play-local").addEventListener("click", function () {
         socket.emit('playLocal');
         app.querySelector(".chat-screen").classList.remove("active");

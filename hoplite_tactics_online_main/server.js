@@ -29,7 +29,7 @@ io.on("connection", function (socket) {
             waitingPlayer = username;
             socket.broadcast.emit("update", username + " started a game, and is waiting for opponent. Click 'Play Online' to join game session.");
         } else {
-            // Start the game
+            // Start online game
             const player1 = waitingPlayer;
             const player2 = username;
 
@@ -38,7 +38,7 @@ io.on("connection", function (socket) {
             // Reset waitingPlayer
             waitingPlayer = null;
 
-            // Emit event to start the game
+            // Emit event to start online game
             io.emit("gameOnlineStart");
         }
     });

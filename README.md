@@ -23,10 +23,10 @@ Hoplite Tactics Online is a two player real-time strategy game. Click 'Play Hopl
 
 - Unit Selection - 'x'
 - Movement:
-      - Up - 'w'
-      - Down - 's'
-      - Left - 'a'
-      - Right - 'd'
+       - Up - 'w'
+       - Down - 's'
+       - Left - 'a'
+       - Right - 'd'
 - Stance:
       - Idle - 'z'
       - Phalanx - 'r'
@@ -38,19 +38,18 @@ Hoplite Tactics Online is a two player real-time strategy game. Click 'Play Hopl
 ## Gameplay
 
 - Victory Conditions:
-
-1. Domination
-      - Eliminate all enemy units.
-2. Capture the Flag
-      - Each player has a capture point on the oposite side of the map.
-      - Whichever player occupies their capture point first will win the match.
-      - Occupy capture point after hoplite unit holds capture point position for 15 seconds.
-      - Strategy: Game mechanics allow for a variety of approaches to gameplay. Including: Defensive, Offensive, and Balanced strategies. Core gameplay is hoplite unit close combat. Players will need to manage health, stamina, and attack timing to succeed in combat. Archers are used to control the battle space. Players can control Archers targeting by capturing Archers position.
+	1. Domination
+    	- Eliminate all enemy units.
+	2. Capture the Flag
+		- Each player has a capture point on the oposite side of the map.
+    	- Whichever player occupies their capture point first will win the match.
+    	- Occupy capture point after hoplite unit holds capture point position for 15 seconds.
+    	- Strategy: Game mechanics allow for a variety of approaches to gameplay. Including: Defensive, Offensive, and Balanced strategies. Core gameplay is hoplite unit close combat. Players will need to manage health, stamina, and attack timing to succeed in combat. Archers are used to control the battle space. Players can control Archers targeting by capturing Archers position.
 
 - Obstacles:
-      - Map Boundaries: Units will not be able to move beyond the Top, bottom, left, and right borders of the map.
-      - Terrain: Rock formations create choke points, and protection from flanking enemies.
-      - Archers: Archers are positioned at the top of the map and are hostile to all units. Archer position may be captured by a single hoplite unit, providing freedom of movement for all friendly units. In Player vs. AI matches, Archers will only attack enemy AI if player is occupying Archer capture point. Hoplite units may enter a 'Turtle' stance to prevent damage from Archer attacks. However, 'Turtle' stance reduces hoplite movement speed and offensive abilities.
+	- Map Boundaries: Units will not be able to move beyond the Top, bottom, left, and right borders of the map.
+    - Terrain: Rock formations create choke points, and protection from flanking enemies.
+    - Archers: Archers are positioned at the top of the map and are hostile to all units. Archer position may be captured by a single hoplite unit, providing freedom of movement for all friendly units. In Player vs. AI matches, Archers will only attack enemy AI if player is occupying Archer capture point. Hoplite units may enter a 'Turtle' stance to prevent damage from Archer attacks. However, 'Turtle' stance reduces hoplite movement speed and offensive abilities.
 
 ## User flow
 

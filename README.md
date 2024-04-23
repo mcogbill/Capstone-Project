@@ -23,29 +23,29 @@ Hoplite Tactics Online is a two player real-time strategy game. Click 'Play Hopl
 
 - Unit Selection - 'x'
 - Movement:
-- Up - 'w'
-- Down - 's'
-- Left - 'a'
-- Right - 'd'
+      - Up - 'w'
+      - Down - 's'
+      - Left - 'a'
+      - Right - 'd'
 - Stance:
-- Idle - 'z'
-- Phalanx - 'r'
-- Turtle - 't'
+      - Idle - 'z'
+      - Phalanx - 'r'
+      - Turtle - 't'
 - Attack:
-- Strike - 'f'
-- Fight - 'c' (Only in phalanx stance)
+      - Strike - 'f'
+      - Fight - 'c' (Only in phalanx stance)
 
 ## Gameplay
 
 - Victory Conditions:
 
 1. Domination
-        - Eliminate all enemy units.
+      - Eliminate all enemy units.
 2. Capture the Flag
-        - Each player has a capture point on the oposite side of the map.
-        - Whichever player occupies their capture point first will win the match.
-        - Occupy capture point after hoplite unit holds capture point position for 15 seconds.
-        - Strategy: Game mechanics allow for a variety of approaches to gameplay. Including: Defensive, Offensive, and Balanced strategies. Core gameplay is hoplite unit close combat. Players will need to manage health, stamina, and attack timing to succeed in combat. Archers are used to control the battle space. Players can control Archers targeting by capturing Archers position.
+      - Each player has a capture point on the oposite side of the map.
+      - Whichever player occupies their capture point first will win the match.
+      - Occupy capture point after hoplite unit holds capture point position for 15 seconds.
+      - Strategy: Game mechanics allow for a variety of approaches to gameplay. Including: Defensive, Offensive, and Balanced strategies. Core gameplay is hoplite unit close combat. Players will need to manage health, stamina, and attack timing to succeed in combat. Archers are used to control the battle space. Players can control Archers targeting by capturing Archers position.
 
 - Obstacles:
       - Map Boundaries: Units will not be able to move beyond the Top, bottom, left, and right borders of the map.
